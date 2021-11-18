@@ -1,0 +1,221 @@
+html>
+  <head>
+   
+ 
+      
+   <style>
+    body{
+        
+        background-color: #EFEFEF;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    } 
+.img{
+    
+  width: 20%;  
+position: absolute;
+left: 48%;
+top: 29%;
+transition: left 2s;
+}
+ .img:hover{
+     
+ left: 300;
+ 
+ }  
+ 
+ .fondo{
+     position: absolute;
+     top: 0;
+     width: 140%;left: -83px;
+     
+ }
+ .boton1{
+    margin-left: 5%; 
+   position:absolute;  
+   left: 00;
+   top:55%;
+   width: 25%;
+   height: 14%;
+  transform: scaleX(-1);
+   
+   
+      border-radius: 100%;
+   background-color: #590007;
+  
+ padding: 0%;
+     
+ }
+ .boton1:a{
+     width: 30%;
+ }
+ 
+  .boton1:active{
+
+  width: 25%;
+   height: 14%;
+   border-radius: 100%;
+   background-color: #FF0027;
+   color: #00FCFF;
+   font-size: 120%;
+   
+      
+  }
+  
+   
+    
+    .flecha{
+	width: 0%;
+    height: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid red;
+    position: absolute;
+    right: 0px;
+    margin: 25% 28% 0% 0%;
+    top: 0px;
+    
+}
+
+.flecha:active {
+	width: 0%;
+    height: 0%;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid aqua;
+    position: absolute;
+    right: 0px;
+    margin: 20% 25% 0% 0%;
+    top: 0px;
+    
+} 
+ 
+ 
+  .boton2{
+    margin-right: 10%; 
+   position: absolute;  
+   left:70%;
+   top:55%;
+   width: 25%;
+     height: 14%; 
+  
+   border-radius: 100%;
+   background-color: #590007;
+  
+ padding: 0%;
+  }
+  .boton2:{
+      
+      width: 2%;
+  }
+   
+  .boton2:active{
+
+  
+   width: 25%;
+   height: 14%;
+   border-radius: 100%;
+   background-color: #FF0027;
+   color: #00FCFF;
+   font-size: 120%;
+     
+ }
+ 
+
+.flecha-container {
+	position: relative;
+    display: block;
+    width: 600px;
+    height: 400px;
+}
+.redes{
+    
+    width: 97%; 
+    position: absolute;
+    bottom: 40;
+    margin: 0;
+    
+}
+.lista{
+
+list-style: none;
+    width: 100%;
+    height: 20%;
+}
+.aa{
+    display: inline-block;
+    position: relative;
+    background-color: blue;
+    padding: 2% 4% 2% 4% ;
+    width:30%; text-align: center;
+    margin-bottom:  4%;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.ae{
+    display: inline-block;
+ background-color: red;   
+        position: relative;
+width: 30%;
+text-align: center;
+    padding: 2% 4% 2% 4% ;
+        border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+   </style>    
+      
+      
+  </head>
+    
+    
+<body>
+    
+    <img class="fondo" id="fondo"src=" https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Parallax-scroll-example.gif/225px-Parallax-scroll-example.gif">
+    
+    <img class="img" id="dibujo" src="https://media.baamboozle.com/uploads/images/124640/1620620352_174920_gif-url.gif"   href="#" >
+    <br>
+
+<a  class="boton1"onclick="mover2();"><img class="flecha"  >  </a>
+<a class="boton2" onclick="mover();" ><img class="flecha"  > </a>
+<script>
+    
+    function mover(){
+     document.getElementById("dibujo").style.transform = "scaleX(1)";
+     document.getElementById("fondo").style.transform = "scaleX(1)";
+     
+    
+    document.getElementById("dibujo").style.left="80%";
+    }
+    
+     function mover2(){
+        
+document.getElementById("fondo").style.transform = "scaleX(-1)";
+
+document.getElementById("fondo").style.left = "-83px";
+    
+        document.getElementById("dibujo").style.transform = "scaleX(-1)";
+    
+    document.getElementById("dibujo").style.left=0;
+    
+    }
+    
+    
+    
+</script>
+<img style="position:absolute;width:50%; top:55%;left:25%;z-index:-1;"src="https://scontent.fctg2-1.fna.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/244375640_286337726827615_9159144555872489464_n.jpg?_nc_cat=101&_nc_rgb565=1&ccb=1-5&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_eui2=AeGGfPhNcSeCwvq8zpoqCtVMv3xxK3d_27C_fHErd3_bsPxz127-vhjzxa6csNM5yY2QzbZT_mCAfskiNsKrfGwT&_nc_ohc=JY4fuGokGoAAX90N33t&tn=BjJ-dIqz7WaL_AQs&_nc_ht=scontent.fctg2-1.fna&oh=dad70bc39007c234782ca76b71b09d4e&oe=6161CF26">
+<center>
+<nav class="redes">
+
+    <li class="lista"><a class="ae" href="https://www.youtube.com/channel/UC_ogOLbzaSRE8ranV9GEjxA" target="_blank">JULIETA.....</a></li>
+    
+  
+    
+  
+</nav>
+
+</body>
+</html>
